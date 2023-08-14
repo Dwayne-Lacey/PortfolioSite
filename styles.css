@@ -5,6 +5,7 @@
 html {
     font-size: 10px;
     min-width: 400px;
+    scroll-behavior: smooth;
 }
 
 body, main {
@@ -115,6 +116,7 @@ header {
     width: 40rem;
     height: 50rem;
     margin: 1rem 4rem;
+    transition: .5s;
 }
 
 .img-container {
@@ -179,13 +181,14 @@ header {
     border: 1px solid rgba(251, 245, 243, 0.075);
     border-radius: .8rem;
     margin: 1rem auto;
+    transition: 1s;
 }
 
 #contact {
     background-color: #7a9b76;
     font-family: 'Exo+2', Arial, Helvetica, sans-serif;
     color: rgb(37, 36, 36);
-    padding: 4rem;
+    padding: 8rem 4rem;
     border-bottom: 3px solid rgb(37, 36, 36);
     margin: 0;
 }
@@ -202,12 +205,16 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .btn {
     font-size: 2.3rem;
     text-decoration: none;
-    color:rgb(24, 24, 24)
+    color:rgb(24, 24, 24);
+    transition: .5s;
+    padding: 3rem 1rem;
 }
 
 i {
@@ -229,3 +236,26 @@ footer > h4 {
     font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 850px) {
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding-top: 2rem;
+    }
+}
+
+
+
+.project-tile:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover {
+    transform: translateY(-2rem);
+}
+
+#projects > a:hover {
+    background-color: #8d29c7;
+}
