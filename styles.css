@@ -29,8 +29,12 @@ header {
     font-family: 'Exo+2', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    padding: 1rem;
-    margin: 0 1rem;
+    padding: 0 3rem;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    transition: 1s;
 }
 
 .nav-bar {
@@ -258,4 +262,8 @@ footer > h4 {
 
 #projects > a:hover {
     background-color: #8d29c7;
+}
+
+.nav-link:hover {
+    background-color: rgb(185, 185, 185);
 }
