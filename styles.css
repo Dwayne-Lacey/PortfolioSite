@@ -4,7 +4,7 @@
 
 html {
     font-size: 10px;
-    min-width: 400px;
+    min-width: 350px;
     scroll-behavior: smooth;
 }
 
@@ -191,9 +191,9 @@ header {
 #contact {
     background-color: #7a9b76;
     font-family: 'Exo+2', Arial, Helvetica, sans-serif;
-    color: rgb(37, 36, 36);
+    color: #31263b;
     padding: 8rem 4rem;
-    border-bottom: 3px solid rgb(37, 36, 36);
+    border-bottom: 3px solid #31263b;
     margin: 0;
 }
 
@@ -216,7 +216,7 @@ header {
 .btn {
     font-size: 2.3rem;
     text-decoration: none;
-    color:rgb(24, 24, 24);
+    color:#31263b;
     transition: .5s;
     padding: 3rem 1rem;
 }
@@ -229,15 +229,17 @@ footer {
     background-color: #7a9b76;
     margin: 0;
     height: 8rem;
+    width: 100%;
 }
 
 footer > h4 {
-    margin: 0;
+    margin: 0 auto;
     display: block;
     font-family: 'Exo+2', Arial, Helvetica, sans-serif;
-    color: rgb(37, 36, 36);
+    color: #31263b;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 850px) {
@@ -250,7 +252,11 @@ footer > h4 {
     }
 }
 
-
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+}
 
 .project-tile:hover {
     transform: scale(1.1);
